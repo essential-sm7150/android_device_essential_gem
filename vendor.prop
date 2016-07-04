@@ -23,5 +23,8 @@ bluetooth.profile.sap.server.enabled?=true
 ro.soc.manufacturer=QTI
 ro.soc.model=SM7150
 
+# Display
+ro.opengles.version=196610
+
 # Zygote
 zygote.critical_window.minute=10
