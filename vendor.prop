@@ -43,6 +43,7 @@ ro.zygote.disable_gl_preload=1
 
 # Media
 debug.stagefright.c2inputsurface=-1
+media.stagefright.thumbnail.prefer_hw_codecs=true
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
