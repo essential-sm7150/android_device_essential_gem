@@ -213,9 +213,6 @@
 
         </module>
 
-        <!-- A2dp Audio HAL -->
-        <xi:include href="a2dp_audio_policy_configuration.xml"/>
-
         <!-- Usb Audio HAL -->
         <module name="usb" halVersion="2.0">
             <mixPorts>
