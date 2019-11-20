@@ -33,8 +33,6 @@ cc_library_shared {
     shared_libs: [
         "liblog",
         "libhidlbase",
-        "libhidltransport",
-        "libhwbinder",
         "libcutils",
         "libutils",
         "android.hardware.gnss@1.0",
@@ -73,9 +71,7 @@ cc_binary {
         "libbase",
         "libutils",
     ] + [
-        "libhwbinder",
         "libhidlbase",
-        "libhidltransport",
         "android.hardware.gnss@1.0",
         "android.hardware.gnss@1.1",
     ],
