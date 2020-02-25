@@ -40,5 +40,8 @@ ro.surface_flinger.max_virtual_display_dimension=4096
 ro.surface_flinger.primary_display_orientation=ORIENTATION_270
 ro.surface_flinger.protected_contents=true
 
+# Perf
+ro.vendor.extension_library=libqti-perfd-client.so
+
 # Zygote
 zygote.critical_window.minute=10
