@@ -1,3 +1,6 @@
 # Chipset
 ro.soc.manufacturer=QTI
 ro.soc.model=SM7150
+
+# Zygote
+zygote.critical_window.minute=10
