@@ -1,0 +1,3 @@
+# Chipset
+ro.soc.manufacturer=QTI
+ro.soc.model=SM7150
