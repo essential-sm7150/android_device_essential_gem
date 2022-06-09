@@ -106,6 +106,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
 
+# GMS
+ifeq ($(WITH_GMS),true)
+GMS_MAKEFILE=gms_minimal.mk
+endif
+
 # GNSS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.1-impl-qti \
