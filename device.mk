@@ -44,6 +44,7 @@ PRODUCT_COPY_FILES += \
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    fstab.qcom.ramdisk \
     init.recovery.qcom.rc
 
 # Kernel
