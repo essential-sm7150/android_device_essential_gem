@@ -6,7 +6,8 @@
 # Currently we dont have e2fsck compiled. So fs check would failed.
 
 #<src>                                                 <mnt_point>        <type>  <mnt_flags and options>                            <fs_mgr_flags>
-/dev/block/platform/soc/1d84000.ufshc/by-name/system                    /                    ext4    ro,barrier=1                                                                                     wait,slotselect,avb
+/dev/block/by-name/system                                               /system              ext4    ro,barrier=1,discard                                                                             wait,slotselect,avb,first_stage_mount
+/dev/block/by-name/vendor                                               /vendor              ext4    ro,barrier=1,discard                                                                             wait,slotselect,avb,first_stage_mount
 /dev/block/platform/soc/1d84000.ufshc/by-name/metadata                  /metadata            ext4    noatime,nosuid,nodev,discard,sync                                                                wait,check,formattable
 /dev/block/platform/soc/1d84000.ufshc/by-name/userdata                  /data                f2fs    noatime,nosuid,nodev,discard,reserve_root=32768,resgid=1065,fsync_mode=nobarrier                 latemount,wait,check,formattable,quota,fileencryption=ice,keydirectory=/metadata/vold/metadata_encryption,reservedsize=128M,checkpoint=fs
 /dev/block/platform/soc/1d84000.ufshc/by-name/misc                      /misc                emmc    defaults                                                                                         defaults
@@ -16,4 +17,3 @@
 /dev/block/platform/soc/1d84000.ufshc/by-name/bluetooth                 /vendor/bt_firmware  vfat    ro,shortname=lower,uid=1002,gid=3002,dmask=227,fmask=337,context=u:object_r:bt_firmware_file:s0  wait,slotselect
 /dev/block/platform/soc/1d84000.ufshc/by-name/logfs                     /mnt/vendor/logfs    vfat    ro,shortname=lower,uid=1002,gid=3002,dmask=227,fmask=337,context=u:object_r:bt_firmware_file:s0  wait
 /dev/block/zram0                                                        none                 swap    defaults                                                                                         zramsize=2147483648,max_comp_streams=8
-
