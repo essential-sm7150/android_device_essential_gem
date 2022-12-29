@@ -113,12 +113,6 @@ on late-fs
     # Mount RW partitions which need run fsck
     mount_all /vendor/etc/fstab.qcom --late
 
-    # Create folders for time-services
-    mkdir /mnt/vendor/persist/time 0770 system system
-
-    # Start time daemon early so that the system time can be set early
-    start time_daemon
-
 on early-boot
     # Allow subsystem (modem etc) debugging
     write /sys/kernel/boot_adsp/boot 1
