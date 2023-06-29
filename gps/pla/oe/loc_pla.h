@@ -48,7 +48,6 @@ extern "C" {
 #endif
 
 #include <cutils/properties.h>
-#include <cutils/threads.h>
 #include <cutils/sched_policy.h>
 #include <sys/time.h>
 #include <string.h>
