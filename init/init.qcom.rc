@@ -124,7 +124,7 @@ on early-boot
     write /sys/kernel/boot_adsp/boot 1
     write /sys/kernel/boot_cdsp/boot 1
 
-on charger
+on property:init.svc.vendor.charger=running
     setprop persist.sys.usb.config adb
     load_system_props
     start hvdcp_opti
@@ -612,11 +612,6 @@ service qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
     group root system wakelock graphics
     disabled
     oneshot
-
-service charger /charger
-    class charger
-    group system graphics
-    seclabel u:r:healthd:s0
 
 service vendor.ssr_diag /system/vendor/bin/ssr_diag
     class late_start
