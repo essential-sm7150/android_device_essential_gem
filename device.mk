@@ -225,7 +225,8 @@ PRODUCT_PACKAGES += \
 
 # Telephony
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.4-service.legacy
+    android.hardware.radio@1.4-service.legacy \
+    android.hardware.radio.config@1.0-service
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml \
