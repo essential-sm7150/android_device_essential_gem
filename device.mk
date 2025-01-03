@@ -63,6 +63,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SHIPPING_API_LEVEL := 28
 
 # Storage
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 PRODUCT_CHARACTERISTICS := nosdcard
 
 # Sensors
