@@ -1,2 +1,5 @@
+# Display
+sys.brightness.disable_gamma_conversion=true
+
 # eBPF
 ro.bpf.kver_override=5.10.239
