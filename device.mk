@@ -188,6 +188,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     CarrierConfigResTarget \
     FrameworksResTarget \
+    Launcher3ResTarget \
     SystemUIResTarget \
     TelephonyResTarget \
     WifiResTarget
