@@ -97,9 +97,8 @@ on post-fs
 
 on late-fs
     # Start services for bootanim
-    start vendor.configstore-hal
-    start vendor.gralloc-2-0
-    start vendor.hwcomposer-2-1
+    start vendor.qti.hardware.display.allocator
+    start vendor.hwcomposer-2-4
     start surfaceflinger
     start bootanim
     start vendor.light-hal-2-0
