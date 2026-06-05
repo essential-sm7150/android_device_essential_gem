@@ -1,0 +1,6 @@
+[
+  {
+    "repository": "android_kernel_essential_sm7150",
+    "target_path": "kernel/essential/sm7150"
+  }
+]
