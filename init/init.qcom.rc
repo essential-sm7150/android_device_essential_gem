@@ -101,7 +101,7 @@ on late-fs
     start vendor.hwcomposer-2-4
     start surfaceflinger
     start bootanim
-    start vendor.light-hal-2-0
+    start vendor.light-default
 
     # Wait for hwservicemanager ready since fsck might be triggered in mount_all --late
     # In such case, init won't responce the property_set from hwservicemanager and then
