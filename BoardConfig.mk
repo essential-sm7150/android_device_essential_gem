@@ -5,6 +5,14 @@
 
 DEVICE_PATH := device/essential/gem
 
+# A/B
+AB_OTA_PARTITIONS += \
+    boot \
+    dtbo \
+    system \
+    vendor \
+    vbmeta
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
