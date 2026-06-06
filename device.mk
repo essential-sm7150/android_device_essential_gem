@@ -157,6 +157,10 @@ $(call soong_config_set_bool,libion,legacy_impl,true)
 # Kernel
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.lineage
+
 # NFC
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
