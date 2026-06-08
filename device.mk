@@ -62,7 +62,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.qcom.ramdisk \
-    init.recovery.qcom.rc
+    init.qcom.rc \
+    init.qcom.usb.rc \
+    init.recovery.qcom.rc \
+    ueventd.qcom.rc
+
+PRODUCT_PACKAGES += \
+    init.qcom.post_boot.sh \
+    init.radio.sh
 
 # Kernel
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
