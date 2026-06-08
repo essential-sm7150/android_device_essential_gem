@@ -91,6 +91,12 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 50
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
+# Security Patch Level
+VENDOR_SECURITY_PATCH := 2019-12-05
+
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 include device/lineage/sepolicy/libperfmgr/sepolicy.mk
