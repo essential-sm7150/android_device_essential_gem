@@ -11,8 +11,41 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.qcom.rc",
+    src: "init.qcom.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.qcom.usb.rc",
+    src: "init.qcom.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.recovery.qcom.rc",
     src: "init.recovery.qcom.rc",
     sub_dir: "init",
     recovery: true,
+}
+
+prebuilt_etc {
+    name: "ueventd.qcom.rc",
+    filename: "ueventd.rc",
+    src: "ueventd.rc",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qcom.post_boot.sh",
+    src: "init.qcom.post_boot.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.radio.sh",
+    src: "init.radio.sh",
+    vendor: true,
 }
