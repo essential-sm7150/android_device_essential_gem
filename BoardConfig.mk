@@ -91,6 +91,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
+include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
