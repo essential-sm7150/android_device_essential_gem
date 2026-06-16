@@ -90,6 +90,13 @@ PRODUCT_COPY_FILES += \
 # Overlay
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+PRODUCT_PACKAGES += \
+    CarrierConfigResTarget \
+    FrameworksResTarget \
+    SystemUIResTarget \
+    TelephonyResTarget \
+    WifiResTarget
+
 # Partitions
 PRODUCT_PACKAGES += \
     vendor_bt_firmware_mountpoint \
