@@ -96,9 +96,6 @@ PRODUCT_PACKAGES += \
     gralloc.qcom \
     hwcomposer.qcom
 
-PRODUCT_PACKAGES += \
-    disable_configstore
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
