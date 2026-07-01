@@ -151,6 +151,9 @@ PRODUCT_PACKAGES += \
     init.qcom.post_boot.sh \
     init.radio.sh
 
+# ION
+$(call soong_config_set_bool,libion,legacy_impl,true)
+
 # Kernel
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
