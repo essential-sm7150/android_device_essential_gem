@@ -36,7 +36,8 @@ vendor.audio_hal.period_size=192
 vendor.voice.path.for.pcm.voip=false
 
 # Audio hardware
-ro.hardware.audio.primary=gem
+#ro.hardware.audio.primary=gem
+ro.hardware.audio.primary=default
 
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
