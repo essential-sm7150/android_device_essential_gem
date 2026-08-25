@@ -13,4 +13,8 @@
         <permission name="android.permission.READ_PRECISE_PHONE_STATE"/>
         <permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>
     </privapp-permissions>
+
+    <!-- Required by com.qualcomm.qcrilmsgtunnel -->
+    <library name="android.hidl.manager@1.0-java"
+        file="/system/framework/android.hidl.manager-V1.0-java.jar" />
 </permissions>
