@@ -57,7 +57,6 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_CONFIG := \
     vendor/sdmsteppe-perf_defconfig \
     vendor/gem.config
-TARGET_KERNEL_NO_GCC := true
 TARGET_KERNEL_SOURCE := kernel/essential/sm7150
 
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
