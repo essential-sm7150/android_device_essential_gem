@@ -107,6 +107,22 @@ PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
 
 # GNSS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.1-impl-qti \
+    android.hardware.gnss@1.1-service-qti
+
+PRODUCT_PACKAGES += \
+    libgps.utils \
+    libgnss \
+    liblocation_api \
+    libloc_core
+
+PRODUCT_PACKAGES += \
+    flp.conf \
+    gps.conf \
+    izat.conf \
+    sap.conf
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
 
