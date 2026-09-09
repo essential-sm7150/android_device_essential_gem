@@ -87,8 +87,8 @@ GnssAdapter::GnssAdapter() :
     mSystemStatus(SystemStatus::getInstance(mMsgTask)),
     mServerUrl(":"),
     mXtraObserver(mSystemStatus->getOsObserver(), mMsgTask),
-    mBlockCPIInfo{},
-    mLocSystemInfo{}
+    mLocSystemInfo{},
+    mBlockCPIInfo{}
 {
     LOC_LOGD("%s]: Constructor %p", __func__, this);
     mLocPositionMode.mode = LOC_POSITION_MODE_INVALID;
