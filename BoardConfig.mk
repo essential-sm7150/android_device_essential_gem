@@ -61,6 +61,8 @@ TARGET_KERNEL_CONFIG := \
 TARGET_KERNEL_NO_GCC := true
 TARGET_KERNEL_SOURCE := kernel/essential/sm7150
 
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
