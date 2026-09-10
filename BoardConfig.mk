@@ -60,6 +60,8 @@ TARGET_KERNEL_CONFIG := \
     vendor/gem.config
 TARGET_KERNEL_SOURCE := kernel/essential/sm7150
 
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
