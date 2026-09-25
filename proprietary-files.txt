@@ -58,6 +58,8 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 
 # Camera
+vendor/bin/vl53l1_daemon_main
+vendor/etc/init/vl53l1.rc
 vendor/firmware/CAMERA_ICP.elf
 vendor/lib64/camera/components/com.qti.camx.chiiqutils.so
 vendor/lib64/camera/components/com.qti.eisv2.so
